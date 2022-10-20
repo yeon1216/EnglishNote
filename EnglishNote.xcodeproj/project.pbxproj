@@ -11,6 +11,14 @@
 		35C34D6129011C440067100D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C34D6029011C440067100D /* ContentView.swift */; };
 		35C34D6329011C450067100D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C34D6229011C450067100D /* Assets.xcassets */; };
 		35C34D6629011C450067100D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35C34D6529011C450067100D /* Preview Assets.xcassets */; };
+		35C34D75290126820067100D /* RandomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C34D72290126820067100D /* RandomView.swift */; };
+		35C34D76290126820067100D /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C34D73290126820067100D /* TranslateView.swift */; };
+		35C34D79290127970067100D /* EnglishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35C34D78290127970067100D /* EnglishListView.swift */; };
+		35F167F329012D45003A3E87 /* English.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F167F229012D45003A3E87 /* English.swift */; };
+		35F167F629013473003A3E87 /* dummy.json in Resources */ = {isa = PBXBuildFile; fileRef = 35F167F529013473003A3E87 /* dummy.json */; };
+		35F167F829013EB1003A3E87 /* EnglishData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F167F729013EB1003A3E87 /* EnglishData.swift */; };
+		35F167FB29013F51003A3E87 /* EnglishStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F167FA29013F51003A3E87 /* EnglishStore.swift */; };
+		35F167FD2901477C003A3E87 /* AddNewEnglishView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F167FC2901477C003A3E87 /* AddNewEnglishView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		35C34D6029011C440067100D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		35C34D6229011C450067100D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35C34D6529011C450067100D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		35C34D72290126820067100D /* RandomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RandomView.swift; path = EnglishNote/UI/RandomView.swift; sourceTree = SOURCE_ROOT; };
+		35C34D73290126820067100D /* TranslateView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TranslateView.swift; path = EnglishNote/UI/TranslateView.swift; sourceTree = SOURCE_ROOT; };
+		35C34D78290127970067100D /* EnglishListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnglishListView.swift; sourceTree = "<group>"; };
+		35F167F229012D45003A3E87 /* English.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = English.swift; sourceTree = "<group>"; };
+		35F167F529013473003A3E87 /* dummy.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = dummy.json; sourceTree = "<group>"; };
+		35F167F729013EB1003A3E87 /* EnglishData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishData.swift; sourceTree = "<group>"; };
+		35F167FA29013F51003A3E87 /* EnglishStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnglishStore.swift; sourceTree = "<group>"; };
+		35F167FC2901477C003A3E87 /* AddNewEnglishView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewEnglishView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +67,9 @@
 		35C34D5D29011C440067100D /* EnglishNote */ = {
 			isa = PBXGroup;
 			children = (
+				35F167F929013F2F003A3E87 /* UI */,
+				35F167F129012D13003A3E87 /* Data */,
 				35C34D5E29011C440067100D /* EnglishNoteApp.swift */,
-				35C34D6029011C440067100D /* ContentView.swift */,
 				35C34D6229011C450067100D /* Assets.xcassets */,
 				35C34D6429011C450067100D /* Preview Content */,
 			);
@@ -65,6 +82,29 @@
 				35C34D6529011C450067100D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		35F167F129012D13003A3E87 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				35F167F229012D45003A3E87 /* English.swift */,
+				35F167F529013473003A3E87 /* dummy.json */,
+				35F167F729013EB1003A3E87 /* EnglishData.swift */,
+				35F167FA29013F51003A3E87 /* EnglishStore.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		35F167F929013F2F003A3E87 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				35C34D6029011C440067100D /* ContentView.swift */,
+				35C34D78290127970067100D /* EnglishListView.swift */,
+				35C34D72290126820067100D /* RandomView.swift */,
+				35C34D73290126820067100D /* TranslateView.swift */,
+				35F167FC2901477C003A3E87 /* AddNewEnglishView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +167,7 @@
 			files = (
 				35C34D6629011C450067100D /* Preview Assets.xcassets in Resources */,
 				35C34D6329011C450067100D /* Assets.xcassets in Resources */,
+				35F167F629013473003A3E87 /* dummy.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35C34D75290126820067100D /* RandomView.swift in Sources */,
+				35F167F829013EB1003A3E87 /* EnglishData.swift in Sources */,
 				35C34D6129011C440067100D /* ContentView.swift in Sources */,
+				35F167FD2901477C003A3E87 /* AddNewEnglishView.swift in Sources */,
+				35C34D79290127970067100D /* EnglishListView.swift in Sources */,
+				35F167FB29013F51003A3E87 /* EnglishStore.swift in Sources */,
 				35C34D5F29011C440067100D /* EnglishNoteApp.swift in Sources */,
+				35F167F329012D45003A3E87 /* English.swift in Sources */,
+				35C34D76290126820067100D /* TranslateView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

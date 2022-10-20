@@ -10,8 +10,12 @@ import SwiftUI
 @main
 struct EnglishNoteApp: App {
     var body: some Scene {
+        
+        let englishStore : EnglishStore = EnglishStore(englishes: englishData)
+        
         WindowGroup {
             ContentView()
+                .environmentObject(englishStore)
         }
     }
 }
